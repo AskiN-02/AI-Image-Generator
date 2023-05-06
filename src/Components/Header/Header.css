@@ -1,0 +1,123 @@
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header__title {
+	padding-top: 1em;
+	text-align: center;
+	font-size: 6rem;
+	font-family: 'Bebas Neue', cursive;
+	color: var(--font-white-color);
+	text-align: left;
+}
+.header__title--grandient {
+	background-image: linear-gradient(
+		45deg,
+		var(--font-main-color),
+		var(--font-secondary-color)
+	);
+	background-size: 100%;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+.header__text {
+	text-align: left;
+	font-size: 1.5rem;
+	color: var(--background-secondary-color);
+}
+.header__text--suprise {
+	color: var(--font-main-color);
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
+}
+.header__text-label {
+	font-size: 1.5rem;
+	color: var(--background-secondary-color);
+	cursor: pointer;
+}
+.header__text--upload {
+	color: var(--font-main-color);
+}
+.header__inputBox {
+	margin: 2em 0 1em 0;
+}
+.header__inputBox input {
+	padding: 0.5em;
+	width: 300px;
+	border: 2px solid var(--font-white-color);
+	outline: none;
+}
+
+.header__inputBox button {
+	margin-left: 2em;
+	padding: 0.5em 1em;
+	color: var(--font-white-color);
+	font-size: 1.5rem;
+	background-image: linear-gradient(
+		90deg,
+		var(--font-main-color),
+		var(--font-secondary-color)
+	);
+}
+.results {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.results--title {
+	margin: 1em 0;
+	font-size: 3rem;
+	color: var(--font-white-color);
+	text-align: center;
+}
+.results--image-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1em;
+	width: 100%;
+}
+.image__box {
+	position: relative;
+	flex: 1;
+	min-width: 250px;
+	max-width: 25%;
+}
+.results--image-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.image__box:hover::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	width: 100px;
+	height: 100px;
+	border-top: 5px solid var(--font-main-color);
+	border-left: 5px solid var(--font-main-color);
+}
+
+.image__box:hover::after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	right: -5px;
+	width: 100px;
+	height: 100px;
+	border-bottom: 5px solid var(--font-main-color);
+	border-right: 5px solid var(--font-main-color);
+}
+.error__message {
+	margin-bottom: 0.5em;
+	font-size: 1.5rem;
+	color: var(--font-main-color);
+}

@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--background-color: #1a1a1d;
+	--background-secondary-color: #4e4e50;
+
+	--font-white-color: #ffffff;
+	--font-main-color: #c3073f;
+	--font-secondary-color: #672232;
+}
+html,
+body {
+	height: 100%;
+	font-family: 'Oxygen', sans-serif;
+	background-color: var(--background-color);
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	height: auto;
+}
+
+button,
+textarea,
+select {
+	font-family: inherit;
+	font-family: 'Bebas Neue', cursive;
+}
+input {
+	font-family: 'Oxygen', sans-serif;
+}
+button {
+	border: none;
+	cursor: pointer;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+}
